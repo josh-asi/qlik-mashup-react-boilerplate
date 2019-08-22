@@ -13,6 +13,10 @@
   ],
   "author": "Josh Asi",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josh-asi/qlik-mashup-react-boilerplate.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",

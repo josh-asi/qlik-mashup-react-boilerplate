@@ -17,7 +17,7 @@ then
 2. Go to the **mashup editor** (on the left hand side)
 3. Create a new project with your desired name
 4. Choose any mashup template
-5. Add these new files (using the + button on the mashup editor - right hand side of the screen)
+5. Create these new files (using the + button on the mashup editor - right hand side of the screen)
    - main.js
    - runtime.js
    - vendors.js
@@ -28,10 +28,11 @@ then
 9. In the **config.js** file under webpack, replace the _{server_name}_ and _{mashup_name}_ with your server name and mashup name
 
 10. In **webpack.common.js**, change the following
-    - HtmlWebpackPlugin -> filename -> "./{mashup_name}.html"
     - CopyPlugin -> Change only the "_Mashup.qext_" in **from** and **to**, to be "{mashup_name}.qext"
 
-11. Run `npm start` and view your mashup on {server_name}/extensions/{mashup_name}/{mashup_name.html}
+11. In **webpack.dev.js** and in **webpack.prod.js**, under the **HtmlWebpackPlugin** filename, replace *index.html* with your mashup name *(e.g Mash.html)*
+12. Run `npm start` and view your mashup on {server_name}/extensions/{mashup_name}/{mashup_name.html}
+
 
 ## Build (production)
 
